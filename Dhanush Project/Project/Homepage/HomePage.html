@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>D-Mart Scan & Pay</title>
+  <link rel="stylesheet" href="HomePage.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <header class="main-header">
+    <h1>D-Mart <span>Scan & Pay</span></h1>
+    <p>Hello Gentle 👋 — Start your Smart Shopping!</p>
+  </header>
+
+  <section class="action-cards">
+    <div class="card" onclick="navigate('scan')">
+      <i class="fas fa-barcode fa-2x"></i>
+      <h2>Scan Products</h2>
+      <p>Use your camera to scan items</p>
+    </div>
+
+    <div class="card" onclick="navigate('cart')">
+      <i class="fas fa-shopping-cart fa-2x"></i>
+      <h2>My Cart</h2>
+      <p>View & manage scanned items</p>
+    </div>
+
+    <div class="card" onclick="navigate('history')">
+      <i class="fas fa-receipt fa-2x"></i>
+      <h2>Payment History</h2>
+      <p>See past purchases & e-bills</p>
+    </div>
+  </section>
+
+  <footer class="bottom-nav">
+    <span><i class="fas fa-home"></i><br/>Home</span>
+    <span><i class="fas fa-tags"></i><br/>Offers</span>
+    <span><i class="fas fa-question-circle"></i><br/>Help</span>
+    <span><i class="fas fa-user"></i><br/>Profile</span>
+  </footer>
+
+  <script src="HomePage.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Barcode Scanner</title>
+  <link rel="stylesheet" href="Scanner.css" />
+</head>
+<body>
+
+  <header class="scanner-header">
+    <h2>📷 Barcode Scanner</h2>
+  </header>
+
+  <main class="scanner-area">
+    <div id="scanner-container">
+      <canvas id="overlay"></canvas>
+    </div>
+    <p id="result">📡 Scanning...</p>
+    <div id="product-details"></div>
+    <button id="scan-again" onclick="restartScanner()">🔁 Scan More</button>
+    <button id="proceed-pay" onclick="proceedToPayment()">💳 Proceed to Pay</button>
+  </main>
+
+  <script src="https://unpkg.com/@ericblade/quagga2@1.2.6/dist/quagga.min.js"></script>
+  <script src="Scanner.js"></script>
+</body>
+</html>
